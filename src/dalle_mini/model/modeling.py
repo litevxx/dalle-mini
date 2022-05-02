@@ -111,8 +111,8 @@ class RMSNorm(nn.Module):
     """
 
     epsilon: float = 1e-6
-    dtype: Any = jnp.bfloat16
-    param_dtype: Any = jnp.bfloat16
+    dtype: Any = jnp.float16
+    param_dtype: Any = jnp.float16
     use_scale: bool = True
     scale_init: Any = jax.nn.initializers.ones
 
